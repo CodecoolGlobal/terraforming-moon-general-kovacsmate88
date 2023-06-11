@@ -33,7 +33,7 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
 
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
-  key_name = "MYKEYEC2"
+  key_name               = "MYKEYEC2"
 
   tags = {
     Name = "My-Moon-EC2-insatnce"
