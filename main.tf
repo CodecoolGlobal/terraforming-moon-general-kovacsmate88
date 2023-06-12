@@ -41,5 +41,5 @@ resource "aws_instance" "my_moon_instance" {
 }
 
 output "public_ip" {
-  value = aws_instance.my_moon_instance.ip
+  value = aws_instance.my_moon_instance.public_ip
 }
