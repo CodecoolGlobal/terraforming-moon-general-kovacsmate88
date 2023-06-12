@@ -28,7 +28,7 @@ resource "aws_security_group" "allow_ssh" {
 }
 
 
-resource "aws_instance" "example" {
+resource "aws_instance" "my_moon_instance" {
   ami           = "ami-00aa9d3df94c6c354"
   instance_type = "t2.micro"
 
@@ -41,5 +41,5 @@ resource "aws_instance" "example" {
 }
 
 output "public_ip" {
-  value = aws_instance.example.public_ip
+  value = aws_instance.my_moon_instance.ip
 }
